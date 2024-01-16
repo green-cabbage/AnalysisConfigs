@@ -97,7 +97,8 @@ cfg = Configurator(
 
 
 run_options = {
-        "executor"       : "dask/lxplus",
+        # "executor"       : "dask_hmm_local", #dask/lxplus
+        "executor"       : "dask_hmm_sl", #dask/lxplus
         "env"            : "singularity",
         "workers"        : 1,
         "scaleout"       : 50,
